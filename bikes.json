@@ -1,0 +1,20 @@
+{
+  "luke": {
+    "name": "Luke Skywalker",
+    "notes": [
+      {
+        "what": "Meet up with Dad",
+        "body": {
+          "where": "Cloud City Bridge",
+          "details": "Don't forget lightsaber"
+        }
+      },
+      {
+        "what": "Pick up Han",
+        "body": {
+          "where": "Jabba's"
+        }
+      }
+    ]
+  },
+}
