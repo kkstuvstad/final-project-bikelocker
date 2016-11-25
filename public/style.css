@@ -251,7 +251,7 @@ footer .copyright {
 .todo-input-element {
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 10px;
   margin: 10px 0;
 }
 
@@ -279,7 +279,7 @@ footer .copyright {
 }
 
 .modal-footer {
-  display: flex;
+  /*display:*/
   justify-content: flex-end;
   padding: 10px 10px 20px 10px;
 }

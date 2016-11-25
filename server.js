@@ -33,9 +33,9 @@ app.get('/BikeLocker', function(req, res) {
   });
 });
 
-app.get('/AddBike', function(req, res) {
+app.get('/ReportBike', function(req, res) {
   res.status(200).render('AddBike-page', {
-    title: 'Add to Locker',
+    title: 'Report Stolen',
   });
 });
 
