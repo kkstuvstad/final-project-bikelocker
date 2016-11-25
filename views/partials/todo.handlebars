@@ -29,18 +29,16 @@
 <h2>{{{what}}}</h2>
   <div class="todo-body">
     {{#if body.where}}
-    <p class="indent-wrapped"><span class="where">where: </span>{{{body.where}}}</p>
+    <p class="indent-wrapped"><span class="where">Location stolen from: </span>{{{body.where}}}</p>
     {{/if}}
 
     {{#if body.when}}
-    <p class="indent-wrapped"><span class="when">when: </span>{{{body.when}}}</p>
+    <p class="indent-wrapped"><span class="when">Date stolen: </span>{{{body.when}}}</p>
     {{/if}}
 
     {{#if body.who}}
-    <p class="indent-wrapped"><span class="who">who: </span>{{{body.who}}}</p>
+    <p class="indent-wrapped"><span class="who">Serial#: </span>{{{body.who}}}</p>
     {{/if}}
-
-    <p>{{{body.details}}}</p>
   </div>
 
   <div class="dismiss-button">&times;</div>
