@@ -1,4 +1,22 @@
+/*
+ * This function removes a particular todo note when its dismiss button is
+ * clicked.  This event listener should be delegated to the <main> element.
+ */
+function removeTodoOnDelegatedDismissClick(event) {
 
+  var clickedElem = event.target;
+  var clickedElemParent = event.target.parentNode;
+
+  /*
+   * If the clicked element is the dismiss button of a todo note, then remove
+   * the todo from its parent.
+   */
+  if (clickedElem.classList.contains('dismiss-button') && clickedElemParent.classList.contains('todo')) {
+    var todoNoteElemParent = clickedElemParent.parentNode;
+    todoNoteElemParent.removeChild(clickedElemParent);
+  }
+
+}
 
 /*
  * This function shows the modal to add a new todo note when the add note
@@ -86,7 +104,7 @@ function insertNewTodo() {
 
 /*
  * This function navigates to a user's notes when a user is selected from
- * the user select list.
+ * the user selector.
  */
 function handleUserSelection(event) {
 
