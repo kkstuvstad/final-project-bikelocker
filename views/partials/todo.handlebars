@@ -22,28 +22,19 @@
 
   --}}
 
-  {{#each notes}}
+  <section class="todo" style="background-Image: url({{image}})">
 
-<section class="todo">
+    <h2>{{{what}}} {{{name}}}</h2>
+      <div class="todo-body">
+        <p class="indent-wrapped"><span class="where">where: </span>{{{where}}}</p>
 
-<h2>{{{what}}}</h2>
-  <div class="todo-body">
-    {{#if body.where}}
-    <p class="indent-wrapped"><span class="where">where: </span>{{{body.where}}}</p>
-    {{/if}}
+        <p class="indent-wrapped"><span class="when">when: </span>{{{when}}}</p>
 
-    {{#if body.when}}
-    <p class="indent-wrapped"><span class="when">when: </span>{{{body.when}}}</p>
-    {{/if}}
+        <p class="Serial#">{{{serial}}}</p>
 
-    {{#if body.who}}
-    <p class="indent-wrapped"><span class="who">who: </span>{{{body.who}}}</p>
-    {{/if}}
+        <p>{{{details}}}</p>
 
-    <p>{{{body.details}}}</p>
-  </div>
+        <p class="hidden">{{image}}</p
+      </div>
 
-  <div class="dismiss-button">&times;</div>
-
-</section>
-{{/each }}
+    </section>

@@ -1,20 +1,53 @@
 {
-  "luke": {
-    "name": "Luke Skywalker",
-    "notes": [
-      {
-        "what": "Meet up with Dad",
-        "body": {
-          "where": "Cloud City Bridge",
-          "details": "Don't forget lightsaber"
-        }
-      },
-      {
-        "what": "Pick up Han",
-        "body": {
-          "where": "Jabba's"
-        }
-      }
-    ]
+  "0001": {
+    "name": "SB-66",
+    "what": "Yeti",
+    "where": "Corvallis, Oregon",
+    "details": "Black frame with gold wheels",
+    "when": "October 3, 2016",
+    "serial": "0001",
+    "image": "http://yetifan.com/Your_YETI/SB66/nealsb66c141.jpg"
   },
+
+  "0002": {
+    "name": "SB-6C",
+    "what": "Yeti",
+    "where": "Corvallis, Oregon",
+    "details": "",
+    "when": "October 3, 2016",
+    "serial": "0002",
+    "image": "http://www.wightmountain.com/wordpress/wp-content/uploads/2014/11/10307214_723971201014019_630844711676443305_n.jpg"
+  },
+
+  "0003": {
+    "name": "SB-66",
+    "what": "Yeti",
+    "where": "Corvallis, Oregon",
+    "details": "",
+    "when": "October 3, 2016",
+    "serial": "0003",
+    "image": "https://i.ytimg.com/vi/PKeC10Bprg4/maxresdefault.jpg"
+  },
+
+  "0004": {
+    "name": "Enduro",
+    "what": "Specialized",
+    "where": "Corvallis, Oregon",
+    "details": "",
+    "when": "October 3, 2016",
+    "serial": "0004",
+    "image": "http://14761-presscdn-0-15.pagely.netdna-cdn.com/wp-content/uploads/2016/05/specialized-enduro-expert-carbon-29er-review25-1140x760.jpg"
+  },
+
+  "0005": {
+    "name": "Nomad",
+    "what": "Santa Cruz",
+    "where": "Corvallis, Oregon",
+    "details": "",
+    "when": "October 3, 2016",
+    "serial": "0005",
+    "image": "http://www.bikemag.com/wp-content/uploads/2014/04/Santa-Cruz-Nomad-11.jpg"
+  }
+
+
 }

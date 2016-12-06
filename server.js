@@ -5,14 +5,10 @@ var exphbs = require('express-handlebars');
 var staticPublic = path.join(__dirname, 'public');
 
 var app = express();
-// var usersData = require('./users-data');
+var bikesData = require('./bikes');
 var port = process.env.PORT || 3000;
 
-// Object.keys(usersData).forEach(function (user) {
-//   if (usersData[user]) {
-//     usersData[user].userName = true;
-//   }
-// });
+Object.keys(bikesData).forEach(function (user) {});
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars');
@@ -23,13 +19,14 @@ app.get('/', function(req, res) {
 
   res.status(200).render('index-page', {
     title: 'TheBikeLocker',
-    // user: usersData
   });
 });
 
 app.get('/BikeLocker', function(req, res) {
-  res.status(200).render('BikeLocker', {
+
+  res.status(200).render('Locker', {
     title: 'Locker',
+    bikes: bikesData,
   });
 });
 
@@ -38,6 +35,19 @@ app.get('/ReportBike', function(req, res) {
     title: 'Report Stolen',
   });
 });
+
+app.get('/bikes-:bike', function(req, res) {
+
+  var bike = bikesData[req.params.bike];
+
+    res.status(200).render('bike-page', {
+
+      title: 'bikes',
+      what: bike.what,
+      name: bike.name,
+    });
+});
+
 
 app.get('*', function (req, res) {
 
