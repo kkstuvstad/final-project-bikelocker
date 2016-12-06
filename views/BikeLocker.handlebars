@@ -10,9 +10,9 @@
 <main>
 
   <h1>Here is the current log of reported stolen bikes</h1>
-
-
-
+  {{#each notes}}
+    {{> todo this}}
+  {{/each}}
 </main>
 
 {{> footer}}
