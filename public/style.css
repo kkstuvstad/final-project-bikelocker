@@ -158,9 +158,9 @@ main {
 }
 
 #add-note-button {
-  width: 64px;
-  height: 64px;
-  background-color: red;
+  width: 80px;
+  height: 80px;
+  background-color: dodgerblue;
   border: none;
   border-radius: 32px;
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
