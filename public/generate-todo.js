@@ -2,42 +2,25 @@
 var todoTemplate = Handlebars.templates.todo;
 
 /*
- * This function should create an HTML string representing a new todo note
- * given the information that could be in the note.
- *
- * Note that where, when, who, and details can be an empty string.  If this
- * is the case, the corresponding portion of the todo note should not be
- * included in the HTML string.
+ * This function creates an HTML string representing a new todo note given
+ * the information that could be in the note.
  */
-
- var content;
 function generateTodoHTML(what, where, when, who, details) {
 
-  content = '<section class="todo">';
-  content += '<h2>'+what+'</h2>';
-  content += '    <div class="todo-body">';
+  // Start the todo note data with just the "what".
+  var todoData = { what: what };
 
-  if(where) {
-    content += '<p class="indent-wrapped"><span class="where">where: </span>'+where+'</p>';
+  // Only add a body to the todo if we have some info to put there.
+  if (where || when || who || details) {
+    todoData.body = {
+      where: where,
+      when: when,
+      who: who,
+      details: details
+    };
   }
 
-  if(when) {
-    content += '<p class="indent-wrapped"><span class="when">when: </span>'+when+'</p>';
-  }
-
-  if(who) {
-    content += '<p class="indent-wrapped"><span class="who">who: </span>'+who+'</p>';
-  }
-
-  if(details) {
-    content += '<p>'+details+'</p>';
-  }
-
-  content += '</div>';
-  content += '<div class="dismiss-button">&times;</div>';
-  content += '</section>';
-
-
-  return content;
+  // Render the todo from the template and return it.
+  return todoTemplate(todoData);
 
 }
