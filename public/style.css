@@ -108,9 +108,8 @@ main h1 {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 400px;
-  min-width: 400px;
-  min-height: 365px;
+  width: 295px;
+  min-height: 300px;
   margin: 18px;
   margin-bottom: 20px;
   font-size: 24px;
@@ -130,21 +129,46 @@ main h1 {
 .todo-body {
   display: none;
 }
-
+/*
 .todo p {
   margin: 15px 0;
-}
+}*/
 
-.todo p.indent-wrapped {
+/*.todo p.indent-wrapped {
   padding-left: 50px;
   text-indent: -50px;
+}*/
+
+.bike {
+  font-size: 20px;
 }
 
-.todo .when,
-.todo .where,
-.todo .who {
+
+.bike .when,
+.bike .where,
+.bike .who,
+.bike .Serial,
+.bike .Owner,
+.bike .details {
   font-weight: bold;
 }
+
+
+
+.bike img {
+  /*display: block;*/
+  position: relative;
+  /*right: 0;*/
+  width: auto;
+  height: auto;
+
+
+}
+
+
+
+
+
 
 .add-note-button-container {
   position: fixed;
@@ -301,3 +325,8 @@ footer .copyright {
   line-height: 175px;
   color: #333;
 }
+
+/*#section .bike h2 {
+
+  float: right;
+}*/

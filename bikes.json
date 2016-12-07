@@ -1,7 +1,7 @@
 {
   "0001": {
-    "name": "SB-66",
-    "what": "Yeti",
+
+    "what": "Yeti SB-66",
     "where": "Corvallis, Oregon",
     "details": "Black frame with gold wheels",
     "when": "October 3, 2016",
@@ -10,8 +10,8 @@
   },
 
   "0002": {
-    "name": "SB-6C",
-    "what": "Yeti",
+
+    "what": "Yeti SB-6C",
     "where": "Corvallis, Oregon",
     "details": "",
     "when": "October 3, 2016",
@@ -20,18 +20,18 @@
   },
 
   "0003": {
-    "name": "SB-66",
-    "what": "Yeti",
+
+    "what": "Knolly Warden",
     "where": "Corvallis, Oregon",
     "details": "",
     "when": "October 3, 2016",
     "serial": "0003",
-    "image": "https://i.ytimg.com/vi/PKeC10Bprg4/maxresdefault.jpg"
+    "image": "http://p.vitalmtb.com/photos/users/27759/setup_checks/26214/photos/26487/s1600_Warden_Steve2_1024x682.jpg?1403790863"
   },
 
   "0004": {
-    "name": "Enduro",
-    "what": "Specialized",
+    
+    "what": "Specialized Enduro",
     "where": "Corvallis, Oregon",
     "details": "",
     "when": "October 3, 2016",
@@ -40,8 +40,8 @@
   },
 
   "0005": {
-    "name": "Nomad",
-    "what": "Santa Cruz",
+
+    "what": "Santa Cruz Nomad",
     "where": "Corvallis, Oregon",
     "details": "",
     "when": "October 3, 2016",
