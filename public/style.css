@@ -1,5 +1,5 @@
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Arial Black', Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -31,7 +31,7 @@ header h1 a:hover {
 nav {
   background-color: #333;
   color: white;
-  margin: 0 -20px;  /* negative margin here makes up for header padding */
+  margin: 0 -20px;
   font-size: 28px;
   font-weight: 200;
 }
@@ -90,22 +90,36 @@ nav {
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   padding: 20px 20px 100px 20px;
-  min-height: 300px;
+  min-height: 400px;
+}
+
+main h1 {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
 }
 
 .todo {
-  background-color: #fffe6e;
-  position: relative;
-  width: 300px;
-  min-height: 300px;
-  margin: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: dodgerblue;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  min-width: 600px;
+  min-height: 365px;
+  margin: 18px;
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 200;
-  word-wrap: break-word;
+  float: left;
+}
+
+.todo:hover .todo-body {
+  cursor: pointer;
 }
 
 .todo h2 {
@@ -114,11 +128,7 @@ main {
 }
 
 .todo-body {
-  padding: 0 20px
-}
-
-.todo-list {
-  list-style-type: circle;
+  display: none;
 }
 
 .todo p {
@@ -136,20 +146,6 @@ main {
   font-weight: bold;
 }
 
-.todo .dismiss-button {
-  font-family: sans-serif;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 30px;
-  display: none;
-  cursor: pointer;
-}
-
-.todo:hover .dismiss-button {
-  display: initial;
-}
-
 .add-note-button-container {
   position: fixed;
   bottom: 35px;
@@ -162,10 +158,10 @@ main {
   height: 80px;
   background-color: dodgerblue;
   border: none;
-  border-radius: 32px;
+  border-radius: 35px;
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 200;
   padding: 0 0 8px 0;
   cursor: pointer;
@@ -189,43 +185,15 @@ footer .copyright {
   font-weight: 200;
 }
 
-#modal-backdrop {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.85);
-}
-
-#add-note-modal {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1010;
-  overflow: scroll;
-}
-
 .hidden {
   display: none;
 }
 
 .modal-dialog {
-  width: auto;
-  max-width: 600px;
-  min-width: 350px;
-  min-height: 300px;
-  margin: 40px auto;
-  background-color: #fff;
-  border-radius: 15px;
-}
-
-.modal-header {
   position: relative;
-  padding: 10px 20px;
+  right: auto;
+  left: auto;
+  float: center;
 }
 
 .modal-header h3 {
@@ -251,7 +219,7 @@ footer .copyright {
 .todo-input-element {
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 10px;
   margin: 10px 0;
 }
 
@@ -279,7 +247,6 @@ footer .copyright {
 }
 
 .modal-footer {
-  display: flex;
   justify-content: flex-end;
   padding: 10px 10px 20px 10px;
 }
@@ -309,8 +276,10 @@ footer .copyright {
 }
 
 .info-container {
-  flex: 1 100%;
+  position: absolute;
   text-align: center;
+  right: 0px;
+  left: 0px;
 }
 
 .info-container h2,
@@ -331,16 +300,4 @@ footer .copyright {
   font-size: 175px;
   line-height: 175px;
   color: #333;
-}
-
-.user-select-container {
-  margin-top: 30px;
-}
-
-#user-select {
-  min-width: 300px;
-  height: 40px;
-  border: 1px solid #333;
-  background-color: #fff;
-  font-size: 20px;
 }
