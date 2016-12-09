@@ -49,6 +49,7 @@ function logBikeInfo() {
   var todoInputWhen = document.getElementById('todo-input-when').value || '';
   var todoInputWho = document.getElementById('todo-input-who').value || '';
   var todoInputDetails = document.getElementById('todo-input-details').value || '';
+  var todoInputURL = document.getElementById('todo-input-url').value || '';
 
   // We only add the note if we have a value for "what".
   if (todoInputWhat.trim()) {
@@ -59,7 +60,8 @@ function logBikeInfo() {
       todoInputWhere.trim(),
       todoInputWhen.trim(),
       todoInputWho.trim(),
-      todoInputDetails.trim()
+      todoInputDetails.trim(),
+      todoInputURL.trim()
     );
 
 
