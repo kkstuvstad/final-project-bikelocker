@@ -1,5 +1,5 @@
 // Grab the todo template from Handlebars.
-var todoTemplate = Handlebars.templates.bike;
+var bikeTemplate = Handlebars.templates.bike;
 
 /*
  * This function should create an HTML string representing a new todo note
@@ -11,7 +11,7 @@ var todoTemplate = Handlebars.templates.bike;
  */
 
 var content;
-function generateTodoHTML(what, where, when, who, details) {
+function generateBike(what, where, when, who, details, url) {
 
   content = '<section class="todo">';
   content += '<h2>'+what+'</h2>';
@@ -33,6 +33,10 @@ function generateTodoHTML(what, where, when, who, details) {
     content += '<p>'+details+'</p>';
   }
 
+  if(url) {
+    content += '<p class="indent-wrapped"><span class="url">url: </span>'+url+'</p>';
+  }
+
   content += '</div>';
   content += '<div class="dismiss-button">&times;</div>';
   content += '</section>';
@@ -41,3 +45,4 @@ function generateTodoHTML(what, where, when, who, details) {
   return content;
 
 }
+
