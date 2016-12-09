@@ -149,7 +149,8 @@ main h1 {
 .bike .who,
 .bike .Serial,
 .bike .Owner,
-.bike .details {
+.bike .details,
+.bike .url {
   font-weight: bold;
 }
 
